@@ -1,0 +1,21 @@
+
+.custom-chat-icon {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #1d41b8;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-chat-icon img {
+    width: 30px;
+    height: 30px;
+}

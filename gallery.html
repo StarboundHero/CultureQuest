@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-description {
+      padding: 15px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #04AA6D;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #028a5d;
+    }
+
+    .sign-up-notice {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Gallery</h1>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="indian-culture.jpg" alt="Indian Cultural Event">
+      <div class="gallery-description">A vibrant celebration of Indian culture during Diwali, showcasing colorful decorations and festivities.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="japanese-culture.jpg" alt="Japanese Festival">
+      <div class="gallery-description">The beauty of a traditional Japanese tea ceremony, emphasizing harmony, respect, purity, and tranquility.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="mexican-culture.jpg" alt="Mexican Festival">
+      <div class="gallery-description">The lively atmosphere of Dia de los Muertos, where families honor and remember their loved ones with colorful altars.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cultural-experience.jpg" alt="Cultural Experience">
+      <div class="gallery-description">Participants engaging in a cultural workshop, learning traditional crafts and practices from various cultures.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="food-festival.jpg" alt="Cultural Food Festival">
+      <div class="gallery-description">A food festival showcasing diverse cuisines from around the world, promoting cultural exchange through culinary delights.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="art-exhibition.jpg" alt="Art Exhibition">
+      <div class="gallery-description">An art exhibition featuring works from local artists, highlighting the influence of cultural heritage in modern art.</div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-button">Return to Home</a>
+  <div class="sign-up-notice">
+
+    Sign up today to discover more about these fascinating cultures and much more!
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="CultureQuest-Aura"
+  agent-id="480e2976-4a88-442c-a894-38c9432538ba"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>

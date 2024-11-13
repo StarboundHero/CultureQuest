@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CultureQuest Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f9f9f9; /* Light gray background */
+    }
+
+    .sidenav {
+      background-color: #ffffff; /* White background for sidebar */
+      height: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 15px; /* Padding for the sidebar */
+    }
+
+    .nav-pills > li > a {
+      color: #333; /* Dark text for sidebar links */
+    }
+
+    .nav-pills > li.active > a {
+      background-color: #04AA6D; /* Active link color */
+      color: white; /* White text for active link */
+    }
+
+    .nav-pills > li > a:hover {
+      background-color: #028a5d; /* Hover color for links */
+      color: white; /* White text on hover */
+    }
+
+    .course-card {
+      background-color: #ffffff; /* White background for course cards */
+      border: 1px solid #e0e0e0; /* Light gray border */
+      border-radius: 5px; /* Rounded corners */
+      padding: 20px; /* Padding inside the card */
+      margin-bottom: 20px; /* Space between cards */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .progress {
+      height: 20px; /* Height of progress bar */
+      margin-bottom: 15px; /* Space below progress bar */
+    }
+
+    .continue-btn {
+      background-color: #04AA6D; /* Green background */
+      color: white; /* White text */
+      border: none; /* Remove border */
+      padding: 10px 15px; /* Padding for button */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Allow padding */
+    }
+
+    .continue-btn:hover {
+      background-color: #028a5d; /* Darker green on hover */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" src="ww.png" alt="Website Logo" > </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Age</a></li>
+        <li><a href="#">Gender</a></li>
+        <li><a href="#">Geo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2></h2> <h2></h2> <h2></h2> <h2></h2> <h2></h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><a href="#section2">Profile</a></li>
+        <li><a href="#section3">Account Settings</a></li>
+        <li><a href="#section4">Progress</a></li>
+      </ul><br>
+    </div>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>(Username here)'s Dashboard</h4>
+        <p>Welcome (Username Here)! Ready to learn?</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="course-card">
+            <h4>Course 1</h4>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%;"></div> <!-- 70% Progress -->
+            </div>
+            <a href="course1.html" class="continue-btn">Continue Course</a>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="course-card">
+            <h4>Course 2</h4>
+            <div class="progress">
+              <div class="progress-bar" style="width:50%;"></div> <!-- 50% Progress -->
+            </div>
+            <a href="course2.html" class="continue-btn">Continue Course</a>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="course-card">
+            <h4>Course 3</h4>
+            <div class="progress">
+              <div class="progress-bar" style="width:30%;"></div> <!-- 30% Progress -->
+            </div>
+            <a href="course3.html" class="continue-btn">Continue Course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

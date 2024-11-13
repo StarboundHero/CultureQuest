@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('72076890519.png'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .about-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 80%;
+      max-width: 600px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .home-button {
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #028a5d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="about-container">
+  <h1>About Us</h1>
+  <p>Welcome to our website! We are dedicated to providing insightful content and valuable resources to our visitors. Our team is passionate about creating a user-friendly experience and sharing knowledge that can help you succeed.</p>
+  
+  <p>Our mission is to make learning and discovery accessible to everyone. Through our platform, we strive to bring you accurate, up-to-date information and engaging content that is relevant to your needs.</p>
+  
+  <p>We appreciate your interest in our website and look forward to supporting you on your journey. Thank you for visiting us and being part of our community!</p>
+  
+  <div class="button-container">
+    <button class="home-button" onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="CultureQuest-Aura"
+  agent-id="480e2976-4a88-442c-a894-38c9432538ba"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>
